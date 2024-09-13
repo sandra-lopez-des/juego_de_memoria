@@ -1,0 +1,258 @@
+body {
+          background-color: #9edbee;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+}
+
+.nerko-one-regular {
+          font-family: "Nerko One", cursive;
+          font-weight: 400;
+          font-style: normal;
+}
+
+#tablero {  
+          display: flex;
+          width: 80%; 
+          flex-wrap: wrap;
+          justify-content: center;
+          font-family: "Anton", sans-serif;
+}
+
+.carta {
+          background-image: url(imagenes/pregunta.png);
+          border-radius: 5px;
+          box-shadow: 3px 3px #838080;
+          background-color: #ffffff;
+          cursor: pointer;
+          display: inline-block;
+          height: 100px;
+          width: 100px;
+          max-width: 110px;
+          max-height: 110px;
+          margin: 1vw;
+          overflow: hidden;
+          vertical-align: top;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          box-shadow: 5px 5px 5px rgb(65, 63, 63);
+}
+
+.desaparece {
+          background-color: transparent;
+          color: transparent;
+          display: inline-block;
+          height: 11vw;
+          width: 11vw;
+          max-width: 110px;
+          max-height: 110px;
+          margin: 1vw;
+}
+
+.desaparece>p {
+          display: none !important;
+}
+
+#score {
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+}
+
+#tiempo {
+          float: left;
+          font-size: 30px;
+}
+
+#puntos {
+          float: right;
+          font-size: 30px;
+}
+
+.carta p {
+          color: transparent;
+          text-align: center;
+          display: none;
+          margin: 0;
+          text-transform: uppercase;
+          width: 100%;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+}
+
+.mariadb {
+          background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.15)),
+                    url("imagenes/mariadb.png");
+          background-size: cover;
+          background-position: center;
+}
+
+.mysql {
+          background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.15)),
+                    url("imagenes/mysql.png");
+          background-size: cover;
+          background-position: center;
+}
+
+.oracle {
+          background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.15)),
+                    url("imagenes/oracle.png");
+          background-size: cover;
+          background-position: center;
+}
+
+.postgres {
+          background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.15)),
+                    url("imagenes/postgres.png");
+          background-size: cover;
+          background-position: center;
+}
+
+.sgdb {
+          background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.15)),
+                    url("imagenes/sgdb.png");
+          background-size: cover;
+          background-position: center;
+}
+
+.sql {
+          background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.15)),
+                    url("imagenes/sql.png");
+          background-size: cover;
+          background-position: center;
+}
+
+.sql_server {
+          background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.15)),
+                    url("imagenes/sql_server.png");
+          background-size: cover;
+          background-position: center;
+}
+
+.sqllite {
+          background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.15)),
+                    url("imagenes/sqllite.png");
+          background-size: cover;
+          background-position: center;
+}
+
+.mariadb_2009 {
+          background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.15)),
+                    url("imagenes/mariadb_2009.png");
+          background-size: cover;
+          background-position: center;
+}
+
+.mysql_1995 {
+          background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.15)),
+                    url("imagenes/mysql_1995.png");
+          background-size: cover;
+          background-position: center;
+}
+
+.oracle_1977 {
+          background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.15)),
+                    url("imagenes/oracle_1977.png");
+          background-size: cover;
+          background-position: center;
+}
+
+.postgres_1996 {
+          background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.15)),
+                    url("imagenes/postgres_1996.png");
+          background-size: cover;
+          background-position: center;
+}
+
+.sgdb_1990 {
+          background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.15)),
+                    url("imagenes/sgdb_1990.png");
+          background-size: cover;
+          background-position: center;
+}
+
+.sql_1970 {
+          background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.15)),
+                    url("imagenes/sql_1970.png");
+          background-size: cover;
+          background-position: center;
+}
+
+.sql_server_1989 {
+          background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.15)),
+                    url("imagenes/sql_server_1989.png");
+          background-size: cover;
+          background-position: center;
+}
+
+.sqllite_2000 {
+          background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.15)),
+                    url("imagenes/sqllite_2000.png");
+          background-size: cover;
+          background-position: center;
+}
+
+
+#score {
+          background-color: rgb(255, 255, 255);
+          margin-top: 50px;
+          border-radius: 5px;
+          color: rgb(49, 44, 44);
+          box-shadow: 5px 5px 5px rgb(65, 63, 63);
+}
+
+#titulos {
+          background-color: blueviolet;
+          height: auto;
+          width: 100%;
+          margin-bottom: 20px;
+          padding: 2px 0;
+          color: rgb(255, 255, 255);
+          font-size: 25px;
+          border-radius: 5px;
+}
+
+#estrellas {
+          font-size: 30px;
+}
+
+.lista {
+          background-color: rgb(209, 241, 247);
+          height: 400px;
+          width: 90%;
+          color: #4d4040;
+          box-shadow: 5px 5px 5px rgb(65, 63, 63);
+          margin-left: 1.5%;
+          margin-top: 50px;
+          font-size: 20px;
+          list-style: none;
+          border-radius: 8px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+}
+
+.enlace {
+          background-color: rgb(26, 57, 233);
+          padding: 10px;
+          margin-top: 20px;
+          border-radius: 5px;
+          box-shadow: 5px 5px 5px rgb(65, 63, 63);
+          opacity: 0.5;
+}
+
+.enlace a {
+          color: white;
+          text-decoration: none;
+          opacity: 0.5;
+}
+
+.enlace:hover,
+a:hover {
+          opacity: 1;
+}
