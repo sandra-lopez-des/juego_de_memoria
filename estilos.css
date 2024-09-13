@@ -256,3 +256,46 @@ body {
 a:hover {
           opacity: 1;
 }
+
+
+#coincidencia {
+          margin-top: 60px;
+          position: fixed;
+          background-color: #eca725;
+          /*  box-shadow: 0 0 20px var(--color-borde); difumina una sombra alrededor del color seleccionado */
+          box-shadow: inset 0px 0px 20px #eca725,
+                    /* difuminado interno */
+                    0px 0px 20px #eca725;
+          /* difuminado externo */
+
+          color: white;
+          padding: 10px 20px;
+          border-radius: 5px;
+          opacity: 1;
+          transition: opacity 0.5s ease-out;
+}
+
+#felicidades {
+          margin-top: 60px;
+          position: fixed;
+          background-color: #2539ec;
+          /*  box-shadow: 0 0 20px var(--color-borde); difumina una sombra alrededor del color seleccionado */
+          box-shadow: inset 0px 0px 20px #2539ec,
+                    /* difuminado interno */
+                    0px 0px 20px #2539ec;
+          /* difuminado externo */
+
+          color: white;
+          padding: 10px 20px;
+          border-radius: 5px;
+          opacity: 1;
+          transition: opacity 0.5s ease-out;
+}
+
+.hidden {
+          display: none;
+}
+
+.fade-out {
+          opacity: 0;
+}
