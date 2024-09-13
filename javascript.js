@@ -41,6 +41,7 @@ function verificar(){
           (carta2.attr("data-num") == 'sql_server') && (carta1.attr("data-num") == 'sql_server_1989') ||
           (carta2.attr("data-num") == 'sqllite') && (carta1.attr("data-num") == 'sqllite_2000') 
 ) {
+  mensajeCoincidencia();
     carta1.removeClass("carta").addClass("desaparece");
     carta2.removeClass("carta").addClass("desaparece");
     carta1 = carta2 = " ";
@@ -50,8 +51,7 @@ function verificar(){
     //Determinar cuando el juego termino
     puntos++;
     if (puntos==numCartas) {
-      alert("Ganaste Felicitaciones!!!");
-
+      mensajeFelicidades();
     }
   }else {
     carta1.children().css("display", "none");
@@ -105,4 +105,41 @@ function tiempo(limite){
       $(".carta").off();
     }
   },1000);
+}
+
+
+function mensajeCoincidencia (){
+  var messageElement = document.getElementById('coincidencia');
+
+  // Mostrar el mensaje
+  messageElement.classList.remove('hidden');
+
+  // Desvanecer el mensaje después de 3 segundos
+  setTimeout(function() {
+      messageElement.classList.add('fade-out');
+      
+      // Ocultar el mensaje completamente después de que se haya desvanecido
+      setTimeout(function() {
+          messageElement.classList.add('hidden');
+          messageElement.classList.remove('fade-out');
+      }, 500); // Debe coincidir con el tiempo de transición en CSS
+  }, 2000); // Tiempo que el mensaje será visible
+}
+
+function mensajeFelicidades (){
+  var messageElement = document.getElementById('felicidades');
+
+  // Mostrar el mensaje
+  messageElement.classList.remove('hidden');
+
+  // Desvanecer el mensaje después de 3 segundos
+  setTimeout(function() {
+      messageElement.classList.add('fade-out');
+      
+      // Ocultar el mensaje completamente después de que se haya desvanecido
+      setTimeout(function() {
+          messageElement.classList.add('hidden');
+          messageElement.classList.remove('fade-out');
+      }, 500); // Debe coincidir con el tiempo de transición en CSS
+  }, 8000); // Tiempo que el mensaje será visible
 }
