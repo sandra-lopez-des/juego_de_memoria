@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="estilos.css">
+          <!-- Incluyendo jQuery desde el CDN de jQuery -->
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+          <link rel="apple-touch-icon" sizes="180x180" href="imagenes/favicon_io/apple-touch-icon.png">
+          <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon_io/favicon-32x32.png">
+          <link rel="icon" type="image/png" sizes="16x16" href="imagenes/favicon_io/favicon-16x16.png">
+          <link rel="manifest" href="/site.webmanifest">
+
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+          <title>Juego de memoria!</title>
+</head>
+
+<body>
+          <div id="titulos">
+                    <h1 class="nerko-one-regular">
+                              <center>JUEGO DE MEMORIA AD BD 2024</center>
+                    </h1>
+                    <h2 class="nerko-one-regular">
+                              <center>EN CUÁL AÑO SE CREO...?</center>
+                    </h2>
+          </div>
+          <div id="tablero">
+                    <div class="carta" data-num=""></div>
+                    <div class="carta" data-num=""></div>
+                    <div class="carta" data-num=""></div>
+                    <div class="carta" data-num=""></div>
+                    <div class="carta" data-num=""></div>
+                    <div class="carta" data-num=""></div>
+                    <div class="carta" data-num=""></div>
+                    <div class="carta" data-num=""></div>
+                    <br>
+
+                    <div class="carta" data-num=""></div>
+                    <div class="carta" data-num=""></div>
+                    <div class="carta" data-num=""></div>
+                    <div class="carta" data-num=""></div>
+                    <div class="carta" data-num=""></div>
+                    <div class="carta" data-num=""></div>
+                    <div class="carta" data-num=""></div>
+                    <div class="carta" data-num=""></div>
+                    <br>
+
+                    <div class="nerko-one-regular" id="score">
+                              <div id="tiempo">00: 00: 00</div>
+                              <div id="estrellas">⭐⭐⭐</div>
+                              <div id="puntos">Score: 0</div>
+                    </div>
+
+          </div>
+
+          <div class="enlace">
+                    <a href="solucion.html" target="_blank">Ver respuestas...</a>
+          </div>
+
+          <!--  relacionar archivo indexJuegoCartas.html con el archivo javascritJuegoCartas.js -->
+          <script src="javascript.js"></script>
+</body>
+
+</html>
