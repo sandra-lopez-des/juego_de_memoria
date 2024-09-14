@@ -12,11 +12,10 @@ body {
           font-style: normal;
 }
 
-#tablero {  
+#tablero {
           display: flex;
-          width: 80%; 
           flex-wrap: wrap;
-          justify-content: center;
+          justify-content: space-around;
           font-family: "Anton", sans-serif;
 }
 
@@ -27,11 +26,6 @@ body {
           background-color: #ffffff;
           cursor: pointer;
           display: inline-block;
-          height: 100px;
-          width: 100px;
-          max-width: 110px;
-          max-height: 110px;
-          margin: 1vw;
           overflow: hidden;
           vertical-align: top;
           display: flex;
@@ -45,7 +39,13 @@ body {
           display: flex;
           justify-content: space-around;
           width: 100%;
+          background-color: rgb(255, 255, 255);
+          margin-top: 50px;
+          border-radius: 5px;
+          color: rgb(49, 44, 44);
+          box-shadow: 5px 5px 5px rgb(65, 63, 63);
 }
+
 
 #tiempo {
           float: left;
@@ -182,14 +182,6 @@ body {
 }
 
 
-#score {
-          background-color: rgb(255, 255, 255);
-          margin-top: 50px;
-          border-radius: 5px;
-          color: rgb(49, 44, 44);
-          box-shadow: 5px 5px 5px rgb(65, 63, 63);
-}
-
 #titulos {
           background-color: blueviolet;
           height: auto;
@@ -197,8 +189,8 @@ body {
           margin-bottom: 20px;
           padding: 2px 0;
           color: rgb(255, 255, 255);
-          font-size: 25px;
           border-radius: 5px;
+
           display: flex;
           flex-direction: column;
           justify-content: space-around;
@@ -285,4 +277,100 @@ a:hover {
 
 .fade-out {
           opacity: 0;
+}
+
+
+
+/* Media query para teléfonos móviles SM XS */
+@media only screen and (max-width: 450px) {
+          #tablero {
+                    width: 100%;
+          }
+
+          .carta {
+                    height: 60px;
+                    width: 60px;
+                    margin: 5px;
+          }
+
+          #score {
+                    width: auto;
+                    padding: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+          }
+
+          #titulos {
+                    font-size: 18px;
+          }
+
+          #coincidencia,
+          #felicidades {
+                    margin-top: 300px;
+          }
+}
+
+
+
+/* Media query para tabletas MD */
+@media only screen and (min-width: 451px) and (max-width: 600px) {
+          #tablero {
+                    width: 100%;
+          }
+
+          .carta {
+                    height: 85px;
+                    width: 85px;
+                    margin: 5px;
+          }
+
+          #score {
+                    width: 95%;
+                    padding: 8px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+          }
+
+          #titulos {
+                    font-size: 19px;
+          }
+
+          #coincidencia,
+          #felicidades {
+                    margin-top: 350px;
+          }
+}
+
+@media only screen and (min-width: 601px) {
+          #tablero {
+                    width: 100%;
+          }
+
+          .carta {
+                    height: 100px;
+                    width: 100px;
+                    margin: 5px;
+          }
+
+          #score {
+                    width: 80%;
+                    padding: 8px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+          }
+
+          #titulos {
+                    font-size: 25px;
+          }
+
+          #coincidencia,
+          #felicidades {
+                    margin-top: 270px;
+          }
 }
