@@ -41,21 +41,6 @@ body {
           box-shadow: 5px 5px 5px rgb(65, 63, 63);
 }
 
-.desaparece {
-          background-color: transparent;
-          color: transparent;
-          display: inline-block;
-          height: 11vw;
-          width: 11vw;
-          max-width: 110px;
-          max-height: 110px;
-          margin: 1vw;
-}
-
-.desaparece>p {
-          display: none !important;
-}
-
 #score {
           display: flex;
           justify-content: space-around;
@@ -259,7 +244,6 @@ a:hover {
 
 
 #coincidencia {
-          margin-top: 60px;
           position: fixed;
           background-color: #eca725;
           /*  box-shadow: 0 0 20px var(--color-borde); difumina una sombra alrededor del color seleccionado */
@@ -276,7 +260,6 @@ a:hover {
 }
 
 #felicidades {
-          margin-top: 60px;
           position: fixed;
           background-color: #2539ec;
           /*  box-shadow: 0 0 20px var(--color-borde); difumina una sombra alrededor del color seleccionado */
