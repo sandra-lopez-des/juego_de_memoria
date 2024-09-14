@@ -42,9 +42,6 @@ function verificar(){
           (carta2.attr("data-num") == 'sqllite') && (carta1.attr("data-num") == 'sqllite_2000') 
 ) {
   mensajeCoincidencia();
-    carta1.removeClass("carta").addClass("desaparece");
-    carta2.removeClass("carta").addClass("desaparece");
-    carta1 = carta2 = " ";
     //Aumentamos el score
     score = score + 2;
     $("#puntos").html("Score: "+score);
