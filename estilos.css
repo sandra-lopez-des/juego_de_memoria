@@ -21,6 +21,9 @@ body {
 
 .carta {
           background-image: url(imagenes/pregunta.png);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
           border-radius: 5px;
           box-shadow: 3px 3px #838080;
           background-color: #ffffff;
@@ -31,7 +34,6 @@ body {
           display: flex;
           justify-content: center;
           align-items: center;
-
           box-shadow: 5px 5px 5px rgb(65, 63, 63);
 }
 
