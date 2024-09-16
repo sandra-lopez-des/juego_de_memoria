@@ -203,21 +203,18 @@ body {
           font-size: 30px;
 }
 
+
 .lista {
           background-color: rgb(209, 241, 247);
           height: 400px;
-          width: 90%;
           color: #4d4040;
           box-shadow: 5px 5px 5px rgb(65, 63, 63);
-          margin-left: 1.5%;
           margin-top: 50px;
-          font-size: 20px;
           list-style: none;
           border-radius: 8px;
           display: flex;
           flex-direction: column;
           justify-content: space-around;
-          align-items: center;
 }
 
 .enlace {
@@ -312,6 +309,19 @@ a:hover {
           #felicidades {
                     margin-top: 300px;
           }
+          
+          .lista {
+                    width: 98%;
+                    font-size: 20px;
+                    padding: 20px 0;  
+                    align-items: normal;
+                    text-align: justify;
+          }
+
+          .lista li {
+                    margin-left: 15px;
+                    margin-right: 15px;
+          }
 }
 
 
@@ -345,6 +355,20 @@ a:hover {
           #felicidades {
                     margin-top: 350px;
           }
+          
+          .lista {
+                    width: 95%;
+                    margin-left: 1.5%;
+                    padding: 20px 0;
+                    font-size: 22px;
+                    align-items: center;
+                    text-align: justify;
+          }
+
+          .lista li {
+                    margin-left: 20px;
+                    margin-right: 20px;
+          }
 }
 
 @media only screen and (min-width: 601px) {
@@ -374,5 +398,14 @@ a:hover {
           #coincidencia,
           #felicidades {
                     margin-top: 270px;
+          }
+          
+          .lista {
+                    width: 90%;
+                    margin-left: 3%;
+                    padding: 20px 0;
+                    font-size: 25px;
+                    align-items: center;
+                    text-align: justify;
           }
 }
